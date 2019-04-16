@@ -6,7 +6,7 @@
         <?php
             echo "<p>Hospital</p>";
         ?>
-        <a href="Hospitallogin.php"> Click here to login 
+        <a href="Hospitallogin.html"> Click here to login 
 		<br/>
 		<br/>
         <a href="Hospitalregistration.html"> Click here to register 

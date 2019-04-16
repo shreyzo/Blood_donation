@@ -1,13 +1,31 @@
-<html>
-    <head>
-        <title>Hospital Login</title>
-    </head>
-    <body>
-  
-        <form action="checklogin.php" method="POST">
-           Enter UHID: <input type="text" name="UHID" required="required" /> <br/><br/>
-           Enter password: <input type="password" name="password" required="required" /> <br/>
-           <input type="submit" value="Login"/>
-        </form>
-    </body>
-</html>
+<?php
+session_start();
+$conn=mysqli_connect("localhost","root","","blooddonation");
+
+if(!$conn)
+{
+  die("connection failed".mysqli_connect_error());
+  echo "fail";
+}
+
+$UHID = $_POST['UHID'];
+$pwd = $_POST['password'];
+$_SESSION['UHID'] = $UHID;
+
+$sql= "SELECT * FROM hospitaltable WHERE UHID='$UHID' AND Password= '$pwd'";
+
+$result = $conn->query($sql);
+if (!$row = $result->fetch_assoc()) {
+   echo "Username or password incorrect!";
+}
+else {
+  echo "Logged in";
+	//starting session
+	//session_start();
+	//$_SESSION["username"]=
+  header("Location: Hospital.php");
+
+}
+
+
+?>
