@@ -1,18 +1,28 @@
-<html>
-    <head>
-        <title>Blood Bank Registration</title>
-    </head>
-    <body>
-        
-        <form action="BloodBankregistration.php" method="POST">
-           Enter DIN: <input type="text" name="DIN" required="required" /> <br/>
-		   <br/>
-           Enter password: <input type="password" name="password" required="required" /> <br/><br/>
-		   Enter Name: <input type="text" name="Name" required="required" /> <br/><br/>
-		   Enter Address: <input type="text" name="Address" required="required" /> <br/><br/>
-           Enter Contact: <input type="text" name="Contact" required="required" /> <br/><br/>
-           Enter Email: <input type="text" name="Email" required="required" /> <br/><br/>       
-           <input type="submit" value="Register"/>
-        </form>
-    </body>
-</html>
+
+<?php
+
+//mysql_connect('localhost','root','','hospitaldatabase')or die(mysql_error());
+$conn=mysqli_connect("localhost","root","","hospitaldatabase");
+
+if(!$conn)
+{
+	die("connection failed".mysqli_connect_error());
+	echo "fail";
+}
+
+
+  if(isset($_POST['Register'])){
+	$UHID=$_POST['UHID'];
+	$password=$_POST['password'];
+	$Name=$_POST['Name'];
+	$Address=$_POST['Address'];
+	$Contact=$_POST['Contact'];
+	$Email=$_POST['Email'];
+
+
+	$query="insert into hospitaltable(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact','$Email')"; //Inserts the value to table users
+	//$query=mysqli_query($con,$sql);
+	$result=$conn->query(query);
+	
+  }	
+?>

@@ -9,6 +9,6 @@
         <a href="BloodBanklogin.php"> Click here to login 
 		<br/>
 		<br/>
-        <a href="BloodBankregistration.php"> Click here to register 
+        <a href="BloodBankregistration.html"> Click here to register 
     </body>
 </html> 

@@ -9,6 +9,6 @@
         <a href="Hospitallogin.php"> Click here to login 
 		<br/>
 		<br/>
-        <a href="Hospitalregistration.php"> Click here to register 
+        <a href="Hospitalregistration.html"> Click here to register 
     </body>
 </html> 
