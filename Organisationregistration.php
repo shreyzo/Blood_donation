@@ -2,7 +2,7 @@ Organisationregistration
 <?php
 
 //mysql_connect('localhost','root','','hospitaldatabase')or die(mysql_error());
-$conn=mysqli_connect("localhost","root","","organisationdatabase");
+$conn=mysqli_connect("localhost","root","","blooddonation");
 
 if(!$conn)
 {
@@ -19,7 +19,7 @@ if(!$conn)
 	$Email=$_POST['Email'];
 
 
-	$query="insert into hospitaltable(Username,Password,Name,upcamp,Associations,Contact,Email) VALUES ('$Username',$Password','$Name','$upcamp','$Associations','$Contact','$Email')"; //Inserts the value to table users
+	$query="insert into OrganisationTable(Username,Password,Name,Upcoming camp,Associations,Contact,Email) VALUES ('$Username',$Password','$Name','$Upcoming camp','$Associations','$Contact','$Email')"; //Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
 	$result=$conn->query($query);
 	
