@@ -10,8 +10,6 @@ if(!$conn)
 	echo "fail";
 }
 
-
-
 	$UHID=$_POST['UHID'];
 	$password=$_POST['password'];
 	$Name=$_POST['Name'];
