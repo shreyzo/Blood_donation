@@ -2,7 +2,7 @@ Hospitalregistration
 <?php
 
 //mysql_connect('localhost','root','','hospitaldatabase')or die(mysql_error());
-$conn=mysqli_connect("localhost","root","","hospitaldatabase");
+$conn=mysqli_connect("localhost","root","","blooddonation");
 
 if(!$conn)
 {
