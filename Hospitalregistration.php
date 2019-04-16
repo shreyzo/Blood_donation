@@ -11,7 +11,7 @@ if(!$conn)
 }
 
 
-  if(isset($_POST['Register'])){
+
 	$UHID=$_POST['UHID'];
 	$password=$_POST['password'];
 	$Name=$_POST['Name'];
@@ -22,7 +22,6 @@ if(!$conn)
 
 	$query="insert into hospitaltable(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact','$Email')"; //Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
-	$result=$conn->query(query);
+	$result=$conn->query($query);
 	
-  }	
 ?>
