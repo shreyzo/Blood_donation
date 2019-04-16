@@ -6,9 +6,9 @@
         <?php
             echo "<p>Organisation</p>";
         ?>
-        <a href="Organisationlogin.php"> Click here to login 
+        <a href="Organisationlogin.html"> Click here to login
 		<br/>
 		<br/>
-        <a href="Organisationregistration.php"> Click here to register 
+        <a href="Organisationregistration.html"> Click here to register
     </body>
-</html> 
+</html>
