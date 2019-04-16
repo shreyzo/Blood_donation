@@ -2,7 +2,7 @@
 <?php
 
 //mysql_connect('localhost','root','','hospitaldatabase')or die(mysql_error());
-$conn=mysqli_connect("localhost","root","","hospitaldatabase");
+$conn=mysqli_connect("localhost","root","","Blooddonation");
 
 if(!$conn)
 {
@@ -20,6 +20,6 @@ if(!$conn)
 
 	$query="insert into bloodbanktable(DIN,Password,Name,Address,Contact,Email) VALUES ('$DIN','$Password','$Name','$Address','$Contact','$Email')"; //Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
-	$result=$conn->query(query);
-	
+	$result=$conn->query($query);
+
 ?>

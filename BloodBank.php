@@ -6,9 +6,9 @@
         <?php
             echo "<p>Blood Bank</p>";
         ?>
-        <a href="BloodBanklogin.php"> Click here to login 
+        <a href="BloodBanklogin.html"> Click here to login 
 		<br/>
 		<br/>
-        <a href="BloodBankregistration.html"> Click here to register 
+        <a href="BloodBankregistration.html"> Click here to register
     </body>
-</html> 
+</html>
