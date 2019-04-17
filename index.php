@@ -33,6 +33,8 @@
 	  <li><a href="Organisation.php">Organisation</li>
 	  <li><a href="Donor.php">Donor</li>
 	  <li><a href="BloodBank.php">BloodBank</li>
+	  <li><a href="Staff.php">Staff</li>
+	  <li><a href="BBmanager.php">Blood Bank Manager</li>
 	</ul>
 </div>
 
