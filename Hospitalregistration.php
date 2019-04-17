@@ -24,12 +24,12 @@ if(!$conn)
 	$query3="insert into hospital_contact(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact1','$Email')"; //Inserts the value to table users
 	$query4="insert into hospital_contact(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact2','$Email')"; //Inserts the value to table users
 
-	Inserts the value to table users
+	//Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
 	$result=$conn->query($query2);
 		$result=$conn->query($query3);
 	$result=$conn->query($query4);
 
 
-	
+
 ?>
