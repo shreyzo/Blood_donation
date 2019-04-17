@@ -23,7 +23,7 @@ else {
 	//starting session
 	//session_start();
 	//$_SESSION["username"]=
-  header("Location: Hospital.php");
+  header("Location: Hospitaldisplay.php");
 
 }
 
