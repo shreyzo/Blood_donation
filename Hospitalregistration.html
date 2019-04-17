@@ -1,19 +1,22 @@
 <html>
     <head>
         <title>Hospital Registration</title>
+        <link rel="stylesheet" type="text/css" href="static/registration.css">
     </head>
     <body>
         
         <form action="Hospitalregistration.php" method="POST">
-           Enter UHID: <input type="text" name="UHID" required="required" /> <br/>
-		   <br/>
-           Enter password: <input type="password" name="password" required="required" /> <br/><br/>
-    		   Enter Name: <input type="text" name="Name" required="required" /> <br/><br/>
-    		   Enter Address: <input type="text" name="Address" required="required" /> <br/><br/>
-    		   Enter Contact: <input type="text" name="Contact" required="required" /> <br/><br/>
-           Enter Email: <input type="text" name="Email" required="required" /> <br/><br/>
-          
-           <input type="submit" value="Register"/>
+          <div class="container">
+            <h1>Hospital Registration </h1>
+             Enter UHID: <input type="text" name="UHID" required="required" placeholder="Enter UHID" /> <br/><br/>
+             Enter password: <input type="password" name="password" required="required" placeholder="Enter password" /> <br/><br/>
+      		   Enter Name: <input type="text" name="Name" required="required" placeholder="Enter Name" /> <br/><br/>
+      		   Enter Address: <input type="text" name="Address" required="required" placeholder="Enter Address" /> <br/><br/>
+      		   Enter Contact: <input type="text" name="Contact" required="required" placeholder="Enter Contact" /> <br/><br/>
+             Enter Email: <input type="text" name="Email" required="required" placeholder="Enter valid email-ID" /> <br/><br/>
+            
+             <button type="submit" value="Register"/>Register</button>
+           </div>
         </form>
 		 </body>
 </html>

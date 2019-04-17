@@ -16,7 +16,7 @@ $sql= "SELECT * FROM bloodbanktable WHERE DIN='$Username' AND Password= '$pwd'";
 
 $result = $conn->query($sql);
 if (!$row = $result->fetch_assoc()) {
-   echo "Username or password incorrect!";
+   echo "Username or Password incorrect!";
 }
 else {
   echo "Logged in";

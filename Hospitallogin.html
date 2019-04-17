@@ -1,13 +1,18 @@
 <html>
     <head>
         <title>Hospital Login</title>
+        <link rel="stylesheet" type="text/css" href="static/login.css">
     </head>
+
     <body>
 
         <form action="Hospitallogin.php" method="POST">
-           Enter UHID: <input type="text" name="UHID" required="required" /> <br/><br/>
-           Enter password: <input type="password" name="password" required="required" /> <br/>
-           <input type="submit" value="Login"/>
+          <div class="container">
+            <h1>Hospital Login</h1>
+           Enter UHID: <input type="text" name="UHID" required="required" placeholder="Enter UHID" /> <br/><br/>
+           Enter password: <input type="password" name="password" required="required" placeholder="Enter Password" /> <br/>
+           <button type="submit" value="Login"/>Login</button>
+         </div>
         </form>
     </body>
 </html>

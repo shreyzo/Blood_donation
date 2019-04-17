@@ -2,27 +2,27 @@
 <html>
     <head>
         <title>Donor Registration</title>
+        <link rel="stylesheet" type="text/css" href="static/registration.css">
     </head>
     <body>
         
         <form action="donorregistration.php" method="POST">
-           Enter Username: <input type="text" name="Username" required="required" /> <br/>
-		   <br/>
-           Enter Password: <input type="Password" name="Password" required="required" /> <br/><br/>
-		       Enter First Name: <input type="text" name="FirstName" required="required" /> <br/><br/>
-           Enter Last Name: <input type="text" name="LastName" required="required" /> <br/><br/>
-		       Enter Address: <input type="text" name="Address" required="required" /> <br/><br/>
-           Enter DOB: <input type="text" name="DOB" required="required" /> <br/><br/>
-		       Enter Weight: <input type="text" name="Weight" required="required" /> <br/><br/>
-           Enter Height: <input type="text" name="Height" required="required" /> <br/><br/>
-		       Enter Contact: <input type="text" name="Contact" required="required" /> <br/><br/>
-           Enter Email: <input type="text" name="Email" required="required" /> <br/><br/>
-           Enter Gender: <input type="text" name="Gender" required="required" /> <br/><br/>
-           Enter Blood Group: <input type="text" name="BloodGroup" required="required" /> <br/><br/>
-
-		   
-       
-           <input type="submit" value="Register"/>
+          <div class="container">
+            <h1>Donor Registration</h1>
+             Enter Username: <input type="text" name="Username" required="required" placeholder="Enter Username" /> <br/><br/>
+             Enter Password: <input type="Password" name="Password" required="required" placeholder="Enter Password" /> <br/><br/>
+  		       Enter First Name: <input type="text" name="FirstName" required="required" placeholder="Enter First name" /> <br/><br/>
+             Enter Last Name: <input type="text" name="LastName" required="required" placeholder="Enter Last name" /> <br/><br/>
+  		       Enter Address: <input type="text" name="Address" required="required" placeholder="Enter Address" /> <br/><br/>
+             Enter DOB: <input type="text" name="DOB" required="required" placeholder="Enter Date of Birth" /> <br/><br/>
+  		       Enter Weight: <input type="text" name="Weight" required="required" placeholder="Enter Weight" /> <br/><br/>
+             Enter Height: <input type="text" name="Height" required="required" placeholder="Enter Height" /> <br/><br/>
+  		       Enter Contact: <input type="text" name="Contact" required="required" placeholder="Enter Contact (10 digit number)" /> <br/><br/>
+             Enter Email: <input type="text" name="Email" required="required" placeholder="Enter valid email-ID " /> <br/><br/>
+             Enter Gender: <input type="text" name="Gender" required="required" placeholder="Enter Gender (M/F)" /> <br/><br/>
+             Enter Blood Group: <input type="text" name="BloodGroup" required="required" placeholder="Enter Blood group(A+/A-/B+/B-/O+/O-/AB+/AB-)" /> <br/><br/> 
+             <button type="submit" value="Register"/>Register</button>
+           </div>
         </form>
     </body>
 </html>

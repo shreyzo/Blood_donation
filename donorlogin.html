@@ -1,13 +1,17 @@
 <html>
     <head>
         <title>Donor Login</title>
+        <link rel="stylesheet" type="text/css" href="static/login.css">
     </head>
     <body>
 
         <form action="donorlogin.php" method="POST">
-           Enter Username: <input type="text" name="username" required="required" /> <br/><br/>
-           Enter password: <input type="password" name="password" required="required" /> <br/>
-           <input type="submit" value="Login"/>
+          <div class="container">
+            <h1>Donor Login</h1>
+             Enter Username: <input type="text" name="username" required="required" placeholder="Enter Username" /> <br/><br/>
+             Enter password: <input type="password" name="password" required="required" placeholder="Enter Password" /> <br/>
+             <button type="submit" value="Login"/>Login</button>
+        </div>
         </form>
     </body>
 </html>

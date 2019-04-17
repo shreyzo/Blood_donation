@@ -1,19 +1,22 @@
 <html>
     <head>
         <title>Donor Registration</title>
+        <link rel="stylesheet" type="text/css" href="static/registration.css">
     </head>
     <body>
 
         <form action="Organisationregistration.php" method="POST">
-           Enter Username: <input type="text" name="Username" required="required" /> <br/>
-		   <br/>
-           Enter Password: <input type="password" name="Password" required="required" /> <br/><br/>
-		       Enter Name: <input type="text" name="Name" required="required" /> <br/><br/>
-           Enter Upcoming camp: <input type="text" name="upcamp" required="required" /> <br/><br/>
-		       Enter Associations: <input type="text" name="Associations" required="required" /> <br/><br/>
-           Enter Contact: <input type="text" name="Contact" required="required" /> <br/><br/>
-           Enter Email: <input type="text" name="Email" required="required" /> <br/><br/>
-           <input type="submit" value="Register"/>
+          <div class="container">
+            <h1>Organisaton Registration</h1>
+           Enter Username: <input type="text" name="Username" required="required" placeholder="Enter Username" /> <br/> <br/>
+           Enter Password: <input type="password" name="Password" required="required" placeholder="Enter password" /> <br/><br/>
+		       Enter Name: <input type="text" name="Name" required="required" placeholder="Enter name" /> <br/><br/>
+           Enter Upcoming camp: <input type="text" name="upcamp" required="required" placeholder="Enter upcoming camp details" /> <br/><br/>
+		       Enter Associations: <input type="text" name="Associations" required="required" placeholder="Enter associations" /> <br/><br/>
+           Enter Contact: <input type="text" name="Contact" required="required" placeholder="Enter contact" /> <br/><br/>
+           Enter Email: <input type="text" name="Email" required="required" placeholder="Enter valid email-ID"/> <br/><br/>
+           <button type="submit" value="Register"/>Register</button> 
+         </div>
         </form>
     </body>
 </html>
