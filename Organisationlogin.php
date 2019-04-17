@@ -8,11 +8,11 @@ if(!$conn)
   echo "fail";
 }
 
-$Username = $_POST['username'];
+$Username = $_POST['user'];
 $pwd = $_POST['password'];
-$_SESSION['Username'] = $Username;
-
-$sql= "SELECT * FROM organisationtable WHERE DIN='$Username' AND Password= '$pwd'";
+$_SESSION['user'] = $Username;
+echo($_SESSION['user']);
+$sql= "SELECT * FROM organisationtable WHERE Username='$Username' AND Password= '$pwd'";
 
 $result = $conn->query($sql);
 if (!$row = $result->fetch_assoc()) {

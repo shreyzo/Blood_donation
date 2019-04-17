@@ -7,6 +7,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
+<style> .container {
+      padding: 10px;
+      padding-right: 500px;
+      padding-left: 500px;
+    }
+</style>
 <body>
 
 <div class="header">
@@ -21,7 +27,7 @@
  <?php
             echo "<center><p><h3>Identify who you are!</h3></p></center>";
 ?>
-<div>
+<div class="container">
 	<ul class="w3-ul w3-card-4 w3-center w3-hoverable" style="width:100%">
 	  <li><a href="Hospital.php">Hospital</li>
 	  <li><a href="Organisation.php">Organisation</li>

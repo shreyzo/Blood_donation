@@ -14,12 +14,22 @@ if(!$conn)
 	$password=$_POST['password'];
 	$Name=$_POST['Name'];
 	$Address=$_POST['Address'];
-	$Contact=$_POST['Contact'];
+	$Contact1=$_POST['Contact1'];
+		$Contact2=$_POST['Contact2'];
+
 	$Email=$_POST['Email'];
 
 
-	$query="insert into hospitaltable(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact','$Email')"; //Inserts the value to table users
+	$query2="insert into hospitaltable(UHID,password,Name,Address,Email) VALUES ('$UHID','$password','$Name','$Address','$Email')"; //Inserts the value to table users
+	$query3="insert into hospital_contact(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact1','$Email')"; //Inserts the value to table users
+	$query4="insert into hospital_contact(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact2','$Email')"; //Inserts the value to table users
+
+	Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
-	$result=$conn->query($query);
+	$result=$conn->query($query2);
+		$result=$conn->query($query3);
+	$result=$conn->query($query4);
+
+
 	
 ?>
