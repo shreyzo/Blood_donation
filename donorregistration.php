@@ -23,9 +23,17 @@ if(!$conn)
 	$BloodGroup=$_POST['BloodGroup'];
 echo "ok done";
 
-$query="insert into donortable(Username,Password,FirstName,LastName,Address,DOB,Weight,Height,Contact,Email,Gender,BloodGroup) VALUES ('$Username','$Password','$FirstName','$LastName','$Address','$DOB','$Weight','$Height','$Contact','$Email','$Gender','$BloodGroup')"; //Inserts the value to table users
+$date=$_POST['DOB'];
+
+$year = date('Y', strtotime($date));
+
+$CurrYear=2019;
+$Age=$CurrYear-$year;
+ 
+
+$query="insert into donortable(Username,Password,FirstName,LastName,Age,Address,DOB,Weight,Height,Contact,Email,Gender,BloodGroup) VALUES ('$Username','$Password','$FirstName','$LastName','$Age','$Address','$DOB','$Weight','$Height','$Contact','$Email','$Gender','$BloodGroup')"; //Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
-	echo "ok";
+	
 	//$result=$conn->query($query);
 //$result = mysqli_query($conn, $query);
 if(mysqli_query($conn, $query)){
