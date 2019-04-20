@@ -1,0 +1,37 @@
+.btn {
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Green */
+    .success {
+      border-color: #4CAF50;
+      color: green;
+    }
+
+    .success:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .container1 {
+      padding: 10px;
+      padding-right: 100px;
+      padding-left: 700px;
+    }
+    .container {
+      padding: 1px;
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+    .a {
+      text-align: center;
+      color: grey; 
+    }
+    .a1 {
+      text-align: center;
+      color: black; 
+    }

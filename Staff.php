@@ -4,29 +4,41 @@
          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
          <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
+         <link rel="stylesheet" type="text/css" href="static/prelogin.css">
     </head>
     <body>
+        <div class="a1">
         <?php
-            echo "<p>Staff</p>";
+            echo "<h3><p>Staff</p></h3>";
         ?>
-        <div class="row">
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="container">
+        <div class="a">
+                    <p><em><h4>"Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a civilization work."</h4></em></p>
+        </div>     
+        
+            <div class="row">
+            <div class="col s6 m6">
+              <div class="card white darken-1">
+                <div class="card-content black-text">
+                  <span class="card-title">Already Registered? </span>
+                </div>
+                <div class="card-action">
+                  <a href="Stafflogin.html"><b>Click here to login</b></a>
+                </div>
+              </div>
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
+            <div class="col s6 m6">
+              <div class="card white darken-1">
+                <div class="card-content black-text">
+                  <span class="card-title">Register yourself!</span>
+                </div>
+                <div class="card-action">
+                  <a href="Staffregistration.html"><b>Click here to Register</b></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-        <a href="Stafflogin.html"> Click here to login
-		<br/>
-		<br/>
-        <a href="Staffregistration.html"> Click here to register 
+    </div>
     </body>
 </html>
