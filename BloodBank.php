@@ -13,7 +13,7 @@
         ?>
         </div>
       <div class="a">
-        <p><em><h4>"Blood donation is a service to humankind."<h4></em></p>
+        <p><em><h4>"Blood donation is the real act of humanity."<h4></em></p>
     </div>
        <div class="container"> 
         <div class="row">

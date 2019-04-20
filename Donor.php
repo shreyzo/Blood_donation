@@ -14,7 +14,7 @@
         </div>
         <div class="container">
         <div class="a">
-                    <p><em><h4>"Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a civilization work."</h4></em></p>
+                    <p><em><h4>"Your blood can give a life to someone."</h4></em></p>
         </div>     
         
             <div class="row">
