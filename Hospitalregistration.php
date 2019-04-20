@@ -27,7 +27,7 @@ if(!$conn)
 	//Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
 	$result=$conn->query($query2);
-		$result=$conn->query($query3);
+	$result=$conn->query($query3);
 	$result=$conn->query($query4);
 
 
