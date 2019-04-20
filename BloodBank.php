@@ -1,36 +1,55 @@
 <html>
     <head>
-        <title>Blood Bank</title>
-        <link rel="stylesheet" type="text/css" href="prelogin.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title></title>
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+         <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
+         <link rel="stylesheet" type="text/css" href="static/prelogin.css">
     </head>
-    <style>
-        .container {
-      padding: 150px;
-      padding-right: 500px;
-      padding-left: 500px;
-    }
-        .card {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-      transition: 0.3s;
-      width: 40%;
-    }
-
-    .card:hover {
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-
-    </style>
     <body>
-        <div class="w3-container">
+        <div class="a1">
         <?php
-            echo "<h2><p>Blood Bank</p></h2>";
+            echo "<h3><p>Blood Bank</p></h3>";
         ?>
         </div>
-        
-        <a href="BloodBanklogin.html"> Click here to login 
-		<br/>
-		<br/>
-        <a href="BloodBankregistration.html"> Click here to register
+      <div class="a">
+        <p><em><h4>"Blood donation is the real act of humanity."<h4></em></p>
+    </div>
+       <div class="container"> 
+        <div class="row">
+        <div class="col s6 m6">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-title">Already Registered? </span>
+            </div>
+            <div class="card-action">
+              <a href="BloodBanklogin.html"><b>Click here to login</b></a>
+            </div>
+          </div>
+        </div>
+        <div class="col s6 m6">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-title">Register yourself!</span>
+            </div>
+            <div class="card-action">
+              <a href="BloodBankregistration.html"><b>Click here to Register</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col s12 m6">
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <span class="card-title">Are you a Blood Bank Manager? </span>
+            </div>
+            <div class="card-action">
+              <a href="BBmanager.php"><b>If YES, Click here.</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </body>
 </html>
