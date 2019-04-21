@@ -9,7 +9,7 @@
     <body>
         <div class="a1">
         <?php
-            echo "<h3><p>Register as hospital</p></h3>";
+            echo "<h3><p>Registered as hospital</p></h3>";
         ?>
         </div>
       <div class="a">
