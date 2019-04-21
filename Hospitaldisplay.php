@@ -1,54 +1,33 @@
-
-<html>
-    <head>
-        <title>Hospital Search</title>
-        <link rel="stylesheet" type="text/css" href="static/login.css">
-    </head>
-
-    <body>
-	<br/>
-        Search By Bloood Group
-				<br/>
-
-		<a href="ABpos.php">AB+;
-		<br/>
-		<a href="ABneg.php">AB-;		<br/>
-
-		<a href="Bpos.php">B+;		<br/>
-
-		<a href="Bneg.php">B-;		<br/>
-
-		<a href="Opos.php">O+;		<br/>
-
-		<a href="Apos.php">A+;		<br/>
-
-		<a href="Aneg.php">A-;		<br/>
-
-		<a href="Oneg.php">O-;		<br/>
-
-
-
-        <form action="search.php" method="POST">
-          <div class="container">
-
-
-               
-
-         </div>
-
-
-
-        </form>
-=======
 <html>
     <head>
         <title></title>
          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <!--Import materialize.css-->
          <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
          <link rel="stylesheet" type="text/css" href="static/prelogin.css">
     </head>
+    <style> .container {
+      padding: 10px;
+      padding-right: 500px;
+      padding-left: 500px;
+    }
+</style>
     <body>
+      <div class="container">
+          <h5>Search By Bloood Group</h5> <br/>
+            <ul class="w3-ul w3-card-4 w3-center w3-hoverable" style="width:100%">
+              <li><a href="ABpos.php">AB+ </li>  
+              <li><a href="ABneg.php">AB- </li>  
+              <li><a href="Bpos.php">B+   </li>
+              <li><a href="Bneg.php">B-   </li>
+              <li><a href="Opos.php">O+   </li>
+              <li><a href="Apos.php">A+   </li>
+              <li><a href="Aneg.php">A-   </li>
+              <li><a href="Oneg.php">O-   </li>
+            </ul>
+      </div>   
+        <form action="search.php" method="POST">
         <div class="a1">
           <h3><p>Donor Data</p></h3>
           <?php
