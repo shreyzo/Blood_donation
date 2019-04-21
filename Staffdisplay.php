@@ -1,3 +1,14 @@
+<html>
+    <head>
+        <title></title>
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <!--Import materialize.css-->
+         <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
+         <link rel="stylesheet" type="text/css" href="static/prelogin.css">
+    </head>
+    <body>
+      <div class="a1">
 <?php
 session_start();
 $conn=mysqli_connect("localhost","root","","blooddonation");
@@ -46,3 +57,6 @@ echo "</table>";
 
 $conn->close();
 ?>
+</div>
+</body>
+</html>

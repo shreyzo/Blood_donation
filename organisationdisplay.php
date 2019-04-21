@@ -1,9 +1,3 @@
-<?php
-session_start();
-echo "welcome";
-echo $_SESSION['user'];
-  ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,3 +23,8 @@ echo $_SESSION['user'];
   </div>
 </head>
 </html>
+<?php
+session_start();
+echo "welcome";
+echo $_SESSION['user'];
+?>

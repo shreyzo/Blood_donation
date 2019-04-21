@@ -12,7 +12,7 @@
     }
 </style>
     <body>
-          <h5>Search By Bloood Group</h5> <br/>
+          <h5>Search By Blood Group</h5> <br/>
             <div class="row">
               <div class="col s1"><a href="ABpos.php">AB+ </div>
               <div class="col s1"><a href="ABneg.php">AB-</div>
@@ -21,7 +21,7 @@
               <div class="col s1"><a href="Apos.php">A+</div>
               <div class="col s1"><a href="Aneg.php">A-</div>
               <div class="col s1"><a href="Opos.php">O+</div>
-			  <div class="col s1"><a href="Oneg.php">O-</div>
+			        <div class="col s1"><a href="Oneg.php">O-</div>
             </div>
       
         <form action="search.php" method="POST">

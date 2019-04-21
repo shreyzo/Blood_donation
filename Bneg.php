@@ -7,7 +7,7 @@
          <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
          <link rel="stylesheet" type="text/css" href="static/prelogin.css">
     </head>
-    <h5>Bloood Group B-</h5> <br/>
+    <h5>Blood Group B-</h5> <br/>
     <div class="a1">
         <?php
         session_start();
