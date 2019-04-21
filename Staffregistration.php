@@ -2,12 +2,13 @@
 <?php
 
 $conn=mysqli_connect("localhost","root","","blooddonation");
-echo "ok";
+//echo "ok";
 if(!$conn)
 {
 	die("connection failed".mysqli_connect_error());
 	echo "fail";
 }
+	$UHID=$_POST['UHID'];
 	$Password=$_POST['Password'];
 	$FirstName=$_POST['FirstName'];
 	$LastName=$_POST['LastName'];
@@ -15,17 +16,27 @@ if(!$conn)
 	$StaffID=$_POST['StaffID'];
 	$Contact=$_POST['Contact'];
 	$BloodGroup=$_POST['BloodGroup'];
-echo "ok done";
+// "ok done";
+$sql= "SELECT * FROM hospitalstaff WHERE UHID='$UHID' AND StaffID= '$StaffID'";
 
-$query="insert into stafftable(Password,FirstName,LastName,Designation,StaffID,Contact,BloodGroup) VALUES ($Password','$FirstName','$LastName','$Designation','$StaffID','$Contact','$BloodGroup')"; //Inserts the value to table users
-	//$query=mysqli_query($con,$sql);
-	echo "ok";
-	//$result=$conn->query($query);
-//$result = mysqli_query($conn, $query);
-if(mysqli_query($conn, $query)){
-	echo "Records inserted successfully.";
-} else{
-	echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-}
+$result = $conn->query($sql);
+if (!$row = $result->fetch_assoc())
+				 {
+					 	echo("Your staff ID is not associated with mentioned hospital");
+					   //header("Location: Staffregistration.html");
+				 }
+
+else {
+	$query="insert into stafftable(Password,FirstName,LastName,Designation,StaffID,Contact,BloodGroup) VALUES ('$Password','$FirstName','$LastName','$Designation','$StaffID','$Contact','$BloodGroup')"; //Inserts the value to table users
+	 if(mysqli_query($conn, $query))
+	 {
+				 echo "Records inserted successfully.";
+				 header("Location: Staffdisplay.php");
+	 } else
+	 {
+		 echo "ERROR: Could not able to execute $query. " . mysqli_error($conn);
+	 }
+ }
+
 mysqli_close($conn);
 ?>
