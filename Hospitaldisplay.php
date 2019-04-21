@@ -16,16 +16,16 @@
     <body>
       <div class="container">
           <h5>Search By Bloood Group</h5> <br/>
-            <ul class="w3-ul w3-card-4 w3-center w3-hoverable" style="width:100%">
-              <li><a href="ABpos.php">AB+ </li>  
-              <li><a href="ABneg.php">AB- </li>  
-              <li><a href="Bpos.php">B+   </li>
-              <li><a href="Bneg.php">B-   </li>
-              <li><a href="Opos.php">O+   </li>
-              <li><a href="Apos.php">A+   </li>
-              <li><a href="Aneg.php">A-   </li>
-              <li><a href="Oneg.php">O-   </li>
-            </ul>
+            <div class="row">
+              <div class="col s1"><a href="ABpos.php">AB+ </div>
+              <div class="col s1"><a href="ABneg.php">AB-</div>
+              <div class="col s1"><a href="Bpos.php">B+</div>
+              <div class="col s1"><a href="Bneg.php">B-</div>
+              <div class="col s1"><a href="Opos.php">O+</div>
+              <div class="col s1"><a href="Apos.php">A+</div>
+              <div class="col s1"><a href="Aneg.php">A-</div>
+              <div class="col s1"><a href="Oneg.php">O-</div>
+            </div>
       </div>   
         <form action="search.php" method="POST">
         <div class="a1">
