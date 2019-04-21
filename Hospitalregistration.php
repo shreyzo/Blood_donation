@@ -21,8 +21,8 @@ if(!$conn)
 
 
 	$query2="insert into hospitaltable(UHID,password,Name,Address,Email) VALUES ('$UHID','$password','$Name','$Address','$Email')"; //Inserts the value to table users
-	$query3="insert into hospital_contact(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact1','$Email')"; //Inserts the value to table users
-	$query4="insert into hospital_contact(UHID,password,Name,Address,Contact,Email) VALUES ('$UHID','$password','$Name','$Address','$Contact2','$Email')"; //Inserts the value to table users
+	$query3="insert into hospital_contact(UHID,Contact) VALUES ('$UHID','$Contact1')"; //Inserts the value to table users
+	$query4="insert into hospital_contact(UHID,Contact) VALUES ('$UHID','$Contact2')"; //Inserts the value to table users
 
 	//Inserts the value to table users
 	//$query=mysqli_query($con,$sql);

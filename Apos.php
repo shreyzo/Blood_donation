@@ -8,13 +8,15 @@ if(!$conn)
   echo "fail";
 }
 
+
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM donortable";
+$sql = "SELECT * FROM donortable WHERE BloodGroup='A+'";
 $result = $conn->query($sql);
+
 
 echo "<table border='1'>
 <tr>
@@ -58,47 +60,3 @@ echo "</table>";
 
 $conn->close();
 ?>
-
-
-<html>
-    <head>
-        <title>Hospital Search</title>
-        <link rel="stylesheet" type="text/css" href="static/login.css">
-    </head>
-
-    <body>
-	<br/>
-        Search By Bloood Group
-				<br/>
-
-		<a href="ABpos.php">AB+;
-		<br/>
-		<a href="ABneg.php">AB-;		<br/>
-
-		<a href="Bpos.php">B+;		<br/>
-
-		<a href="Bneg.php">B-;		<br/>
-
-		<a href="Opos.php">O+;		<br/>
-
-		<a href="Apos.php">A+;		<br/>
-
-		<a href="Aneg.php">A-;		<br/>
-
-		<a href="Oneg.php">O-;		<br/>
-
-
-		
-        <form action="search.php" method="POST">
-          <div class="container">
-	
-			
-             <a href ="		   
-		   
-         </div>
-		 
-		   
-
-        </form>
-    </body>
-</html>

@@ -1,4 +1,4 @@
-Organisationregistration
+Organisation registration
 <?php
 session_start();
 //mysql_connect('localhost','root','','hospitaldatabase')or die(mysql_error());
