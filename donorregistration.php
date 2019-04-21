@@ -29,17 +29,17 @@ $year = date('Y', strtotime($date));
 
 $CurrYear=2019;
 $Age=$CurrYear-$year;
- 
+
 
 $query="insert into donortable(Username,Password,FirstName,LastName,Age,Address,DOB,Weight,Height,Contact,Email,Gender,BloodGroup) VALUES ('$Username','$Password','$FirstName','$LastName','$Age','$Address','$DOB','$Weight','$Height','$Contact','$Email','$Gender','$BloodGroup')"; //Inserts the value to table users
 	//$query=mysqli_query($con,$sql);
-	
+
 	//$result=$conn->query($query);
 //$result = mysqli_query($conn, $query);
 if(mysqli_query($conn, $query)){
 	echo "Records inserted successfully.";
 } else{
-	echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+	echo "ERROR: Could not able to execute $query. " . mysqli_error($conn);
 }
 mysqli_close($conn);
 ?>

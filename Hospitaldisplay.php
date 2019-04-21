@@ -1,65 +1,3 @@
-<<<<<<< HEAD
-<?php
-session_start();
-$conn=mysqli_connect("localhost","root","","blooddonation");
-
-if(!$conn)
-{
-  die("connection failed".mysqli_connect_error());
-  echo "fail";
-}
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT * FROM donortable";
-$result = $conn->query($sql);
-
-echo "<table border='1'>
-<tr>
-<th>Firstname</th>
-<th>Lastname</th>
-<th>Blood Group</th>
-<th>Contact</th>
-<th>Address</th>
-<th>Email</th>
-<th>Height</th>
-<th>Weight</th>
-<th>DOB</th>
-<th>Age</th>
-<th>Gender</th>
-
-</tr>";
-if ($result->num_rows > 0) {
-  while($row = mysqli_fetch_array($result))
-  {
-  echo "<tr>";
-  echo "<td>" . $row['FirstName'] . "</td>";
-  echo "<td>" . $row['LastName'] . "</td>";
-  echo "<td>" . $row['BloodGroup'] . "</td>";
-  echo "<td>" . $row['Contact'] . "</td>";
-  echo "<td>" . $row['Address'] . "</td>";
-  echo "<td>" . $row['Email'] . "</td>";
-  echo "<td>" . $row['Height'] . "</td>";
-  echo "<td>" . $row['Weight'] . "</td>";
-  echo "<td>" . $row['DOB'] . "</td>";
-  echo "<td>" . $row['Age'] . "</td>";
-  echo "<td>" . $row['Gender'] . "</td>";
-  echo "</tr>";
-  }
-}else {
-        echo "0 results";
-      }
-echo "</table>";
-
-
-
-
-$conn->close();
-?>
-
 
 <html>
     <head>
@@ -89,16 +27,16 @@ $conn->close();
 		<a href="Oneg.php">O-;		<br/>
 
 
-		
+
         <form action="search.php" method="POST">
           <div class="container">
-	
-			
-             <a href ="		   
-		   
+
+
+               
+
          </div>
-		 
-		   
+
+
 
         </form>
 =======
@@ -178,6 +116,6 @@ $conn->close();
 
         </div>
 
->>>>>>> 38af626d3d760024637908d829df85e0902dc364
+
     </body>
 </html>

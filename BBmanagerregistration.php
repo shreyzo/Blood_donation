@@ -1,7 +1,7 @@
 
 <?php
-session_start();
 
+//mysql_connect('localhost','root','','hospitaldatabase')or die(mysql_error());
 $conn=mysqli_connect("localhost","root","","blooddonation");
 echo "ok";
 if(!$conn)
@@ -17,17 +17,16 @@ if(!$conn)
   $Email=$_POST['Email'];
 echo "ok done";
 
-$query="insert into bbmanager(Password,FirstName,LastName,DIN,Contact,Email) VALUES ($Password','$FirstName','$LastName','$DIN','$Contact','$Email')"; //Inserts the value to table users
+$query="insert into bbmanagertable (Password,FirstName,LastName,DIN,Contact,Email) VALUES
+ ('$Password','$FirstName','$LastName','$DIN','$Contact','$Email')"; //Inserts the value to table users
+  //$query=mysqli_query($con,$sql);
+  echo "ok";
+  //$result=$conn->query($query);
+//$result = mysqli_query($conn, $query);
 if(mysqli_query($conn, $query)){
   echo "Records inserted successfully.";
 } else{
-  echo "ERROR: Could not able to execute $sql ".mysqli_error($conn);
+  echo "ERROR: Could not able to execute $query. " . mysqli_error($conn);
 }
 mysqli_close($conn);
-
-
-	//$result = mysqli_query($conn, $query);
-	//mysqli_close($conn);
-
-
 ?>
