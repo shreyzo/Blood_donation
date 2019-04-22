@@ -15,7 +15,7 @@
             }
     </style>
     <body>
-
+<div class="a1" class="center">
 <?php
     $db = mysqli_connect("localhost","root","","blooddonation");
 
@@ -27,7 +27,6 @@
       while ($row = mysqli_fetch_array($result))
     	{
 
-    				echo "<div class ="container">";
             echo "<div id='img_div'>";
             echo "<img src = 'uploads/".$row['UpCamp']."'width = 300 height = 200/ >";
             echo "<p>".$row['UpCampText']."</p>";
@@ -35,3 +34,4 @@
       }
 
   ?>
+</div>
