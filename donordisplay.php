@@ -16,6 +16,7 @@
     </style>
     <body>
 <div class="a1" class="center">
+  <h3>Upcoming Camps</h3>
 <?php
     $db = mysqli_connect("localhost","root","","blooddonation");
 
@@ -29,8 +30,8 @@
 
             echo "<div id='img_div'>";
             echo "<img src = 'uploads/".$row['UpCamp']."'width = 300 height = 200/ >";
-            echo "<p>".$row['UpCampText']."</p>";
-            echo "</div></div>";
+            echo "<p><h5>".$row['UpCampText']."</h5></p>";
+            echo "</div>";
       }
 
   ?>

@@ -15,6 +15,7 @@ $_SESSION['UHID'] = $UHID;
 $sql= "SELECT * FROM hospitaltable WHERE UHID='$UHID' AND Password= '$pwd'";
 
 $result = $conn->query($sql);
+
 if (!$row = $result->fetch_assoc()) {
    echo "Username or password incorrect!";
 }

@@ -15,8 +15,8 @@
         <div class="container">
         <div class="a">
                     <p><em><h4>"Individual commitment to a group effort - that is what makes a team work, a company work, a society work, a civilization work."</h4></em></p>
-        </div>     
-        
+        </div>
+
             <div class="row">
             <div class="col s6 m6">
               <div class="card white darken-1">
@@ -65,7 +65,7 @@ else {
 	 if(mysqli_query($conn, $query))
 	 {
 				 echo "Records inserted successfully.";
-				 header("Location: Staffdisplay.php");
+				 header("Location: Stafflogin.html");
 	 } else
 	 {
 		 echo "ERROR: Could not able to execute $query. " . mysqli_error($conn);
