@@ -35,3 +35,18 @@
       text-align: center;
       color: black; 
     }
+    #content{
+      align: center;
+      width: 740px;
+      height: 580px;
+      margin-left: 200px;
+      margin-top: 20px;
+      padding: 0px;
+      border: 0px solid #460606;
+      border-radius: 4px;
+    }
+    #abc{
+      position: relative;
+      left: 420px;
+      top: 15px;
+    }
